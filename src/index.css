@@ -510,3 +510,33 @@
   }
   
 }
+/* course card */
+
+.course-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.course-duration,
+.course-amount {
+  font-weight: bold;
+}
+
+.course-description {
+  color: #555;
+}
