@@ -510,9 +510,17 @@
   }
   
 }
+@media screen and (max-width:1024px) {
+  .course-list{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
 /* course card */
 
 .course-card {
+  
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 16px;
@@ -532,6 +540,7 @@
   border-radius: 4px;
 }
 
+
 .course-duration,
 .course-amount {
   font-weight: bold;
@@ -539,4 +548,7 @@
 
 .course-description {
   color: #555;
+}
+.course-list{
+  display: flex;
 }

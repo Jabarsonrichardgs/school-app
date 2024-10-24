@@ -1,11 +1,8 @@
 import styled from "styled-components";
 import "./index.css";
-import Navbar from "./components/Navbar";
+
 import Home from "./components/Home";
-import Features from "./components/Features";
-import Services from "./components/Services";
-import Pricing from "./components/Pricing";
-import ContactUs from "./components/ContactUs";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -22,13 +19,17 @@ const App = () => {
     <>
       <Container className="main">
        
-          <Navbar />
+        <BrowserRouter>
+        <Routes>
 
-          <Home />
-          <Features />
-          <Services />
-          <Pricing />
-          <ContactUs />
+          <Route path="/" element={  <Home />}/>
+          <Route path="/online-courses" element={<ExploreCourses/>} />
+        </Routes>
+        
+        </BrowserRouter>
+
+        
+          
 
       </Container>
     </>

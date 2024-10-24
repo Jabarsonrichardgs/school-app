@@ -1,11 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import Men from '../assests/Images/men.png'
+import Men from "../assests/Images/men.png";
 import Animations from "./Animation";
+import Features from "./Features";
+import Services from "./Services";
+import Pricing from "./Pricing";
+import ContactUs from "./ContactUs";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
     <>
+      <Navbar />
       <div className="container home d-flex mt-5">
         <div className="left-content">
           <h1>Elevate Your Knowledge, Embrace Your Future!</h1>
@@ -17,17 +24,24 @@ const Home = () => {
             seeking to refine your skills, we have something for everyone.
           </p>
           <div className="start">
-            <button className="btn bt-1  mt-2 fw-bold  800">Start With Us</button>
-           
-           
+            <button className="btn bt-1  mt-2 fw-bold  800">
+              Start With Us
+            </button>
           </div>{" "}
         </div>
 
         <div className="right-content">
-            <img src={Men} alt="" />
+          <img src={Men} alt="" />
         </div>
-        <Animations/>
+    
       </div>
+
+      <Features />
+        <Services />
+        <Pricing />
+        <ContactUs />
+        <Animations />
+        <Footer/>
     </>
   );
 };

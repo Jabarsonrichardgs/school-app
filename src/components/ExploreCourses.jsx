@@ -1,5 +1,6 @@
 import React from "react";
 import CourseCard from './CourseCard';
+import Footer from "./Footer";
 const ExploreCourses = () => {
   const courses = [
     {
@@ -29,8 +30,9 @@ const ExploreCourses = () => {
   ];
 
   return (
-    <div className="explore-courses">
-      <h1>Explore Our Courses</h1>
+    <>
+    <div className="explore-courses container">
+      <h1 style={{textAlign:"center" ,color:"crimson"}}>Explore Our Courses</h1>
       <div className="course-list">
         {courses.map((course, index) => (
           <CourseCard
@@ -44,6 +46,8 @@ const ExploreCourses = () => {
         ))}
       </div>
     </div>
+<Footer/>
+    </>
   );
 };
 

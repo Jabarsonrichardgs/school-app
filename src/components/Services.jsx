@@ -21,9 +21,9 @@ const Services = () => {
             provide interactive learning experiences, including quizzes,
             assignments, and multimedia content.
           </p>
-          {/* <Link to="/online-courses"> */}
+          <Link to="/online-courses">
             <button className="btn">Explore Courses</button>
-          {/* </Link> */}
+          </Link>
         </div>
 
         <div className="service-item">
