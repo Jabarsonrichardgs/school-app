@@ -46,7 +46,7 @@ const ExploreCourses = () => {
         ))}
       </div>
     </div>
-<Footer/>
+<Footer/>             
     </>
   );
 };
